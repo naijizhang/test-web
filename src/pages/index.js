@@ -35,7 +35,7 @@ class Main extends Component {
           <Home />
         </Element>
 
-        <Element name="about" className="">
+        {/* <Element name="about" className="">
           <About />
         </Element>
 
@@ -45,7 +45,7 @@ class Main extends Component {
 
         <Element name="contact" className="">
           <Contact />
-        </Element>
+        </Element> */}
       </>
     );
   }
