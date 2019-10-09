@@ -1,0 +1,88 @@
+@import "../../sass/_variables";
+@import "../../sass/_mixins";
+@import "../../sass/container";
+
+.about-content-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  @include flex();
+  width: 100%;
+  margin: auto;
+
+  .sectionOne,
+  .sectionTwo {
+    display: flex;
+    @include flex();
+    width: 100%;
+    margin: auto;
+  }
+
+  @include tablet {
+    .sectionOne {
+      margin-top: 2rem;
+    }
+  }
+
+  @include desktop {
+    @include flex();
+    margin: auto;
+    width: 90%;
+
+    .sectionOne {
+      display: flex;
+      @include flex(row, space-around, center);
+      margin-top: 0;
+    }
+    .sectionTwo {
+      display: flex;
+      @include flex(row-reverse, space-evenly, center);
+      .text-wrapper {
+        // max-width: 50%;
+      }
+    }
+  }
+
+  .text-wrapper {
+    @include desktop {
+      max-width: 60%;
+    }
+  }
+
+  .text {
+    color: $light;
+    font-family: $font-main;
+    font-size: $text-mob;
+    // line-height: 1.8;
+
+    @include tablet {
+      font-size: $text-tab;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    @include desktop {
+      // line-height: 1.8;
+    }
+  }
+
+  .techs {
+    color: $color-main;
+  }
+}
+
+.profile-mobile {
+  padding: 1.5rem 0 1rem;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+.gif {
+  width: 80vw;
+  @include tablet {
+    width: 35vw;
+  }
+  @include desktop {
+    width: 25vw;
+    max-width: 420px;
+  }
+}

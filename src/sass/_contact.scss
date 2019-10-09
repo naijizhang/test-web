@@ -1,0 +1,179 @@
+.contact {
+  display: flex;
+  @include flex();
+  // height: 80vh;
+
+  .info-wrapper {
+    margin: 2rem 0;
+
+    @include desktop {
+      margin: 2rem 0;
+    }
+  }
+  .text-wrapper {
+    display: flex;
+    @include flex(column, space-between, center);
+    color: $light;
+    height: 80%;
+    max-width: 85%;
+    margin: auto;
+    // padding-top: 2rem;
+
+    @include tablet {
+      padding-top: 2rem;
+    }
+
+    @include desktop {
+      max-width: 75%;
+    }
+  }
+}
+.text {
+  line-height: 1.8;
+  font-size: inherit;
+  @include desktop {
+  }
+}
+
+.icon-container {
+  display: flex;
+  @include flex();
+  padding: 2rem 0;
+  width: 100%;
+
+  @include tablet {
+    // @include flex(row, space-around, center);
+    padding: 4rem 0;
+    max-width: 650px;
+  }
+
+  .icon {
+    color: $light;
+    width: 20px;
+    padding-right: 1rem;
+
+    @include tablet {
+      width: 25px;
+    }
+  }
+}
+.icon-wrapper {
+  display: flex;
+  @include flex(row, center, center);
+  color: $light;
+
+  line-height: 2.5;
+  text-decoration: none;
+  padding: 0 1.5rem;
+
+  &:hover {
+    color: $color-main;
+  }
+}
+
+.name-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .width {
+    width: 50%;
+  }
+}
+
+.textField {
+  color: $color-main;
+  // background: $color-main;
+}
+
+.contact-form {
+  display: flex;
+  @include flex(column, space-between, flex-end);
+}
+
+.btn {
+  margin: 2rem 0;
+}
+.send-btn {
+  display: flex;
+  @include flex(row, flex-end, flex-end);
+
+  width: 105px;
+  align-self: flex-end;
+}
+
+.contact-images {
+  display: none;
+
+  // @include tablet {
+  //   display: flex;
+  //   @include flex(row, center, center);
+  //   // flex: 1;
+  //   flex-wrap: wrap;
+  //   margin: 1rem 0 3rem;
+  //   width: 100vw;
+  // }
+}
+.contact-img {
+  max-height: 180px;
+
+  @include tablet {
+    padding: 0 5px;
+  }
+
+  @include desktop {
+    max-height: 200px;
+    padding: 0 0.8rem;
+  }
+}
+
+/* 
+ * Credit 
+ */
+.credit {
+  color: $grey;
+  font-size: $xxs;
+  display: flex;
+  @include flex(row);
+  margin: 1rem 0;
+  width: 100%;
+
+  @include tablet {
+    font-size: $xs;
+  }
+
+  .author {
+    color: $color-main-dark;
+    margin-right: 5px;
+    text-decoration: none;
+    &:hover {
+      color: $light;
+    }
+  }
+}
+
+/* 
+ * Form 
+ */
+.form {
+  display: flex;
+  @include flex(column, null, null);
+  max-width: 85%;
+  margin: auto;
+
+  input {
+    background: $textfield-bg;
+    border-radius: 5px;
+    color: $grey;
+  }
+
+  .btn {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+}
+
+.video {
+  width: 100vw;
+  height: auto;
+}

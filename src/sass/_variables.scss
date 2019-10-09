@@ -1,0 +1,47 @@
+// Screen Sizes
+$tablet-width: 600px;
+$desktop-width: 950px;
+$tv-width: 1440px;
+
+/* colors */
+$bg-color: #5563e2; //#181b1c; //#252627; // #282c34;
+$nav-bg: #282c34;
+
+$color-main: #c3ff36; // #ffc732 Jake-Yellow
+$color-main-dark: #44ffd0; //#6dd4ba;
+$color-sec: #2de9fe; //#ffcd38
+$color-tert: #e8583d; // #ff5d6a red-orange
+$tags: #37393b; //#515152;
+$textfield-bg: #515152;
+
+$dark: #000;
+$grey: #8d8d8d;
+$light: #fff;
+$purple: #19bfd2;
+
+$btn-border: 1px solid $color-main;
+$border: 2px solid $color-main-dark;
+
+// Fonts
+$font-main: 'OpenSans-Light', Helvetica, sans-serif;
+$font-bold: 'OpenSans-Bold', Helvetica, sans-serif;
+$font-semibold: 'OpenSans-SemiBold', Helvetica, sans-serif;
+$font-cursive: 'Sacramento', cursive;
+$font-title: 'Titillium Web', Helvetica, sans-serif;
+$font-heading: 'Titillium Web', Helvetica, sans-serif;
+
+// Sizes
+$xxxs: 8px;
+$xxs: 10px;
+$xs: 12px;
+$sm: 14px;
+$md: 16px;
+$lg: 18px;
+$xl: 20px;
+
+$text-mob: 15px;
+$text-tab: 17px;
+
+$title-mobile: 36px;
+$title-tablet: 45px;
+$title-desktop: 55px;

@@ -1,0 +1,117 @@
+.home-title {
+  color: $light;
+  font-family: $font-heading;
+  font-size: $title-mobile;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0;
+
+  &:hover {
+    color: $color-main;
+  }
+
+  @include tablet {
+    font-size: $title-tablet;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+  @include desktop {
+    font-size: $title-desktop;
+    line-height: 58px;
+  }
+}
+
+.title-wrapper {
+  .third-line {
+    font-size: $title-mobile * 0.81;
+    line-height: 1.5;
+
+    @include tablet {
+      font-size: $title-tablet * 0.9;
+    }
+    @include desktop {
+      font-size: $title-desktop * 0.9;
+    }
+  }
+}
+
+.subheading {
+  color: $color-sec;
+  font-family: $font-main;
+  font-size: $xs;
+  letter-spacing: 1.1px;
+
+  @include tablet {
+    font-family: $font-semibold;
+    font-size: $md;
+    letter-spacing: 2.5px;
+    line-height: 1;
+  }
+
+  @include desktop {
+    font-size: $lg;
+  }
+}
+
+.title {
+  color: $color-sec;
+  font-family: $font-heading;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+
+  @include tablet {
+    font-size: $title-tablet;
+    font-weight: 600;
+    // padding-left: 1.5rem;
+  }
+  @include desktop {
+    line-height: 1.1;
+    // padding-left: 2rem;
+  }
+}
+.titlewrapper {
+  padding: 1rem 0;
+}
+
+/* 
+ * Header 
+ */
+.header-wrapper {
+  display: flex;
+  @include flex();
+  height: 55px;
+  margin-top: 3rem;
+
+  @include tablet {
+    height: 60px;
+    width: 94vw;
+  }
+}
+
+.greybg {
+  border-top: $border;
+  border-bottom: $border;
+  position: relative;
+  width: 100vw;
+
+  @include tablet {
+    width: 94vw;
+  }
+}
+.greybg-mob {
+  @include desktop {
+    display: none;
+  }
+}
+.greybg-desk {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
